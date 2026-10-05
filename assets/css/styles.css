@@ -1,3 +1,279 @@
----
----
-@import 'main'
+/* general */
+* {box-sizing: border-box;}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #ffffff;
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/* layout */
+#wrapper {
+    display: flex;
+    min-height: 100vh;
+}
+#page-content-wrapper {
+    flex: 1;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 30px;
+}
+
+/* sidebar */
+.sidebar {
+    width: 220px;
+    min-height: 100vh;
+    padding: 25px 20px;
+    border-right: 1px solid #111111;
+    background: #ffffff;
+    overflow-y: auto;
+}
+
+/* logo */
+.sidebar-logo {
+    margin-bottom: 45px;
+}
+.sidebar-logo a {
+    display: block;
+}
+.sidebar-logo img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* section headings */
+.sidebar-section {
+    margin-top: 30px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: lowercase;
+}
+
+/* links */
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.sidebar-links a {
+    display: block;
+    padding: 3px 0;
+    color: #111111;
+    text-decoration: none;
+}
+
+    .sidebar-links a:hover {
+        text-decoration: underline;
+    }
+
+/* PORTFOLIO GRID */
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+
+/* PORTFOLIO ITEMS */
+
+.portfolio-item {
+    min-width: 0;
+}
+
+    .portfolio-item img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+
+/* MUSIC ITEMS */
+
+.music-item {
+    min-width: 0;
+}
+
+
+/* CD */
+
+.music-cd {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+}
+
+    .music-cd img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+
+    /* CD CENTER */
+
+    .music-cd::before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        width: 17%;
+        height: 17%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: #ffffff;
+        box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .music-cd::after {
+        content: "";
+        position: absolute;
+        z-index: 3;
+        top: 50%;
+        left: 50%;
+        width: 5%;
+        height: 5%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        background: #111111;
+    }
+
+
+/* CD SHINE */
+
+.music-cd-shine {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    border-radius: 50%;
+    pointer-events: none;
+    background: linear-gradient(135deg, rgba(255,255,255,0.25), transparent 35%, transparent 65%, rgba(255,255,255,0.12));
+}
+
+
+/* PLAY BUTTON */
+
+.music-cd-wrap {
+    position: relative;
+}
+
+.music-play {
+    position: absolute;
+    z-index: 5;
+    top: 50%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    border: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.78);
+    color: #111111;
+    font-size: 18px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+}
+
+.music-cd-wrap:hover .music-play {
+    opacity: 1;
+}
+
+
+/* SPINNING CD */
+
+.music-cd.playing {
+    animation: music-spin 4s linear infinite;
+}
+
+@keyframes music-spin {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* SONG TITLE */
+
+.music-title {
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 1.3;
+}
+
+
+/* PROGRESS */
+
+.music-progress {
+    display: none;
+    width: 100%;
+    height: 12px;
+    margin-top: 7px;
+    cursor: pointer;
+}
+
+.music-item.playing .music-progress {
+    display: block;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    #wrapper {
+        display: block;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid #111111;
+        padding: 20px;
+    }
+
+    .sidebar-logo {
+        margin-bottom: 25px;
+    }
+
+    .sidebar-section {
+        margin-top: 20px;
+    }
+
+    #page-content-wrapper {
+        height: auto;
+        padding: 20px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+}

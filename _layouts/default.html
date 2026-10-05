@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        {% include head.html %}
-    </head>
-    <body>
-        {{ content }}
-        {% include js-link.html %}
-    </body>
+<head>
+    {% include head.html %}
+</head>
+<body>
+    <div id="wrapper">
+        {% include sidebar.html %}
+
+        <div id="page-content-wrapper">
+            {{ content }}
+        </div>
+    </div>
+
+    {% include js-link.html %}
+</body>
 </html>
