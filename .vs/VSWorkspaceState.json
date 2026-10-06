@@ -3,11 +3,13 @@
     "",
     "\\assets",
     "\\assets\\css",
+    "\\assets\\icons",
+    "\\assets\\img",
     "\\assets\\js",
+    "\\assets\\music",
     "\\_includes",
-    "\\_layouts",
-    "\\_posts"
+    "\\_layouts"
   ],
-  "SelectedNode": "\\_sass",
+  "SelectedNode": "\\.gitignore",
   "PreviewInSolutionExplorer": false
 }
