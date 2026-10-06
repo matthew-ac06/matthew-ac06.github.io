@@ -2,9 +2,8 @@ title: Matthew Caldwell
 email: matthew.thecaldwell06@gmail.com
 description: >-
   Portfolio for Matthew Caldwell.
-baseurl: "/matthew-ac06"
+baseurl: ""
 url: "https://matthew-ac06.github.io"
-github_username: matthew-ac06
 
 permalink: pretty
 markdown: kramdown

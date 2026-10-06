@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\_layouts\\default.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:_layouts\\default.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\_includes\\head.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:_includes\\head.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\assets\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\assets\\js\\music-player.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\js\\music-player.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\music.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:music.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\art.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:art.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\games.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:games.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\_includes\\sidebar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -19,32 +43,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\_layouts\\default.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:_layouts\\default.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\art.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:art.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\games.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:games.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\assets\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\music.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:music.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\assets\\js\\music-player.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\js\\music-player.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,11 +54,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": ".gitignore",
               "DocumentMoniker": "D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -70,7 +70,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "_config.yml",
               "DocumentMoniker": "D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\_config.yml",
               "RelativeDocumentMoniker": "_config.yml",
@@ -78,7 +78,8 @@
               "RelativeToolTip": "_config.yml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2026-10-06T02:26:41.962Z"
+              "WhenOpened": "2026-10-06T02:26:41.962Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -90,11 +91,12 @@
               "RelativeToolTip": "games.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-10-05T21:55:02.38Z"
+              "WhenOpened": "2026-10-05T21:55:02.38Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "sidebar.html",
               "DocumentMoniker": "D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\_includes\\sidebar.html",
               "RelativeDocumentMoniker": "_includes\\sidebar.html",
@@ -107,7 +109,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "index.html",
               "DocumentMoniker": "D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\index.html",
               "RelativeDocumentMoniker": "index.html",
@@ -127,11 +129,12 @@
               "RelativeToolTip": "art.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAHAQAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-10-05T21:18:39.407Z"
+              "WhenOpened": "2026-10-05T21:18:39.407Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 4,
               "Title": "music.html",
               "DocumentMoniker": "D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\music.html",
               "RelativeDocumentMoniker": "music.html",
@@ -139,11 +142,12 @@
               "RelativeToolTip": "music.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAACMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-10-05T21:18:38.096Z"
+              "WhenOpened": "2026-10-05T21:18:38.096Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 3,
               "Title": "music-player.js",
               "DocumentMoniker": "D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\assets\\js\\music-player.js",
               "RelativeDocumentMoniker": "assets\\js\\music-player.js",
@@ -151,11 +155,12 @@
               "RelativeToolTip": "assets\\js\\music-player.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2026-10-05T21:16:20.134Z"
+              "WhenOpened": "2026-10-05T21:16:20.134Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
               "Title": "styles.css",
               "DocumentMoniker": "D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\assets\\css\\styles.css",
               "RelativeDocumentMoniker": "assets\\css\\styles.css",
@@ -163,11 +168,12 @@
               "RelativeToolTip": "assets\\css\\styles.css",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAH4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-10-03T06:21:56.822Z"
+              "WhenOpened": "2026-10-03T06:21:56.822Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "head.html",
               "DocumentMoniker": "D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\_includes\\head.html",
               "RelativeDocumentMoniker": "_includes\\head.html",
@@ -180,7 +186,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "default.html",
               "DocumentMoniker": "D:\\Users\\super\\Desktop\\Games\\matthew-ac06.github.io\\matthew-ac06.github.io\\_layouts\\default.html",
               "RelativeDocumentMoniker": "_layouts\\default.html",
@@ -188,7 +194,8 @@
               "RelativeToolTip": "_layouts\\default.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2026-10-03T06:15:55.211Z"
+              "WhenOpened": "2026-10-03T06:15:55.211Z",
+              "EditorCaption": ""
             }
           ]
         }
