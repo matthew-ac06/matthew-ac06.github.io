@@ -1,14 +1,11 @@
-# Welcome to Jekyll!
-
 title: Matthew Caldwell
 email: matthew.thecaldwell06@gmail.com
 description: >-
   Portfolio for Matthew Caldwell.
 baseurl: ""
-url: "https://matthew-ac06.github.io"
+url: "https://matthewcaldwell.com"
 github_username: matthew-ac06
 
-# Build settings
 permalink: pretty
 markdown: kramdown
 # theme: minima
