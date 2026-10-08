@@ -2,91 +2,154 @@
 document.addEventListener("DOMContentLoaded", function () {
     const players = document.querySelectorAll("audio");
     const canvas = document.getElementById("audio-visualizer");
-    const ctx = canvas.getContext("2d");
+
+    if (!canvas) return;
+
+    const canvasCtx = canvas.getContext("2d");
 
     let audioContext;
     let analyser;
+    let dataArray;
+
     const sources = new Map();
 
-    const barCount = 32;
-    const segmentCount = 20;
-    const activeSegments = new Array(barCount).fill(0);
-    const audioBoost = 1.8;
-    const audioRange = 200;
+    const barCount = 48;
+    const barValues = new Array(barCount).fill(0);
 
     function setupVisualizer(player) {
         if (!audioContext) {
+            const AudioContext = window.AudioContext || window.webkitAudioContext;
+
             audioContext = new AudioContext();
             analyser = audioContext.createAnalyser();
-            analyser.fftSize = 128;
+
+            analyser.fftSize = 1024;
+            analyser.smoothingTimeConstant = 0.35;
+
+            dataArray = new Uint8Array(analyser.frequencyBinCount);
+
             analyser.connect(audioContext.destination);
         }
 
         if (!sources.has(player)) {
             const source = audioContext.createMediaElementSource(player);
+
             source.connect(analyser);
+
             sources.set(player, source);
         }
     }
 
     function resizeCanvas() {
-        canvas.width = window.innerWidth;
+        canvas.width = canvas.offsetWidth;
         canvas.height = canvas.offsetHeight;
     }
 
     function draw() {
         requestAnimationFrame(draw);
 
-        ctx.clearRect(0, 0, canvas.width, canvas.height);
-
         const currentPlayer = [...players].find(function (player) {
             return !player.paused;
         });
 
-        let data = null;
+        canvasCtx.clearRect(0, 0, canvas.width, canvas.height);
 
-        if (analyser && currentPlayer) {
-            data = new Uint8Array(analyser.frequencyBinCount);
-            analyser.getByteFrequencyData(data);
+        if (!analyser || !currentPlayer) {
+            for (let i = 0; i < barCount; i++) {
+                barValues[i] *= 0.85;
+            }
+
+            return;
         }
 
-        const barWidth = canvas.width / barCount;
-        const segmentHeight = canvas.height / segmentCount;
-        const gap = 6;
+        analyser.getByteFrequencyData(dataArray);
+
+        const visualizerColor = getComputedStyle(
+            canvas.parentElement
+        ).getPropertyValue("--visualizer-color").trim();
+
+        canvasCtx.fillStyle = visualizerColor;
+
+        const minFrequency = 40;
+        const maxFrequency = Math.min(
+            audioContext.sampleRate / 2,
+            16000
+        );
 
         for (let i = 0; i < barCount; i++) {
-            let targetSegments = 0;
-
-            if (data) {
-                const dataIndex = Math.floor(i * data.length * 0.7 / barCount);
-
-                const normalized = data[dataIndex] / 255;
-
-                targetSegments = Math.round(
-                    Math.pow(normalized, 0.7) * segmentCount
+            const startFrequency =
+                minFrequency *
+                Math.pow(
+                    maxFrequency / minFrequency,
+                    i / barCount
                 );
-            }
 
-            if (activeSegments[i] < targetSegments) {
-                activeSegments[i] += 1;
-            } else if (activeSegments[i] > targetSegments) {
-                activeSegments[i] -= 1;
-            }
-
-            for (let j = 0; j < segmentCount; j++) {
-                const active = j < activeSegments[i];
-
-                if (!active) continue;
-
-                ctx.fillStyle = "mediumspringgreen";
-
-                ctx.fillRect(
-                    i * barWidth,
-                    canvas.height - (j + 1) * segmentHeight + gap / 2,
-                    barWidth - gap,
-                    segmentHeight - gap
+            const endFrequency =
+                minFrequency *
+                Math.pow(
+                    maxFrequency / minFrequency,
+                    (i + 1) / barCount
                 );
+
+            const startBin = Math.floor(
+                startFrequency /
+                (audioContext.sampleRate / analyser.fftSize)
+            );
+
+            const endBin = Math.min(
+                dataArray.length - 1,
+                Math.ceil(
+                    endFrequency /
+                    (audioContext.sampleRate / analyser.fftSize)
+                )
+            );
+
+            let sum = 0;
+            let count = 0;
+
+            for (
+                let bin = startBin;
+                bin <= endBin;
+                bin++
+            ) {
+                sum += dataArray[bin];
+                count++;
             }
+
+            const targetValue = count > 0 ? sum / count : 0;
+
+            if (targetValue > barValues[i]) {
+                barValues[i] +=
+                    (targetValue - barValues[i]) * 0.75;
+            } else {
+                barValues[i] +=
+                    (targetValue - barValues[i]) * 0.2;
+            }
+        }
+
+        const gap = 3;
+        const barWidth =
+            canvas.width / barCount - gap;
+
+        for (let i = 0; i < barCount; i++) {
+            const barHeight =
+                (barValues[i] / 255) *
+                canvas.height *
+                0.9;
+
+            const x =
+                i * (canvas.width / barCount) +
+                gap / 2;
+
+            const y =
+                canvas.height - barHeight;
+
+            canvasCtx.fillRect(
+                x,
+                y,
+                barWidth,
+                barHeight
+            );
         }
     }
 
@@ -107,8 +170,11 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     resizeCanvas();
+
     window.addEventListener("resize", resizeCanvas);
+
     draw();
+});
 
 /* lightbox/zoom */
     const images = document.querySelectorAll(".portfolio-item img");
@@ -160,4 +226,3 @@ document.addEventListener("DOMContentLoaded", function () {
             lightboxImage.style.transformOrigin = "center center";
         }
     });
-});
