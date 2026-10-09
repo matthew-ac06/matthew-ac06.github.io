@@ -39,10 +39,6 @@ body {
     padding: clamp(20px, 3vw, 40px);
 }
 
-.contact-page {
-    padding-top: clamp(50px, 8vw, 120px);
-}
-
 
 /* sidebar */
 
@@ -60,18 +56,6 @@ body {
 .pixelart {
     image-rendering: pixelated;
 }
-
-.right-image {
-    text-align: right;
-    padding-top: clamp(50px, 8vw, 120px);
-    padding-bottom: clamp(50px, 8vw, 120px);
-    padding-right: clamp(50px, 20vw, 600px);
-}
-
-    .right-image img {
-        width: clamp(200px, 35vw, 512px);
-        height: auto;
-    }
 
 
 /* logo */
@@ -146,6 +130,48 @@ body {
     }
 
 
+/* contact page */
+.contact-page {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.contact-text {
+    color: var(--pee);
+    font-size: clamp(18px, 2.5vw, 30px);
+    margin: 12px 0;
+}
+
+    .contact-text.email {
+        color: white;
+    }
+
+    .contact-text a {
+        color: var(--pee);
+        text-decoration: underline;
+    }
+
+    .contact-text a:hover {
+        color: white;
+    }
+
+.email-gif {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+    .email-gif img {
+        display: block;
+        width: clamp(250px, 35vw, 450px);
+        max-width: 100%;
+        height: auto;
+    }
+
+.contact-text:last-child {
+    margin-top: 45px;
+}
+
 /* grid */
 
 .portfolio-grid {
@@ -176,6 +202,7 @@ body {
     .portfolio-item iframe {
         display: block;
         width: 100%;
+        height: auto;
         aspect-ratio: 16 / 9;
         border: 0;
     }
