@@ -176,7 +176,7 @@ document.addEventListener("DOMContentLoaded", function () {
     draw();
 });
 
-/* lightbox/zoom */
+/* lightbox & zoom */
     const images = document.querySelectorAll(".portfolio-item img");
     const lightbox = document.getElementById("image-lightbox");
     const lightboxImage = document.getElementById("lightbox-image");
